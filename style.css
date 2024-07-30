@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Tajawal", sans-serif;
+}
+body{
+    direction: rtl;
+    background-image: url(1.jpg);
+    object-fit: contain;
+    
+}
+.container{
+    width: 90%;
+    margin: 0px  auto; 
+}
+hr{
+    margin: 0;
+}
+.city-history{
+    margin-top: 50px;
+}
+.city-history h1{
+    font-size: 100px;
+    font-weight: normal;
+}
+.city-history h2{
+    font-size: 40px;
+    font-weight: normal;
+}
+hr{
+    margin: 0 50px;
+    border-color: rgb(250, 248, 245);
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.card{
+    width: 15%;
+    height: 250px;
+}
+.card h3{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 25px;
+    /* font-weight: normal; */
+}
+.card h2{
+    background-color: rgb(215, 177, 119);
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #fff;
+}
+.selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.selected select{
+    width: 250px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    outline: none;
+    background-color:  rgb(215, 177, 119);
+    color: #000;
+    font-size: 18px;
+    border: none;
+
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+
+}
+footer h2{
+    font-size: 25px;
+}
+@media screen and (max-width:480px){
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .selected select{
+        width: 90%;
+    }
+    .selected{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    .cards{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .selected select{
+        width: 90%;
+    }
+    .selected{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
